@@ -169,8 +169,7 @@ PMPERMIT_TEXT = os.environ.get("PMPERMIT_TEXT", None)
 PM_LIMIT = int(os.environ.get("PM_LIMIT", 6))
 
 # Custom Pmpermit pic
-PMPERMIT_PIC = os.environ.get(
-    "PMPERMIT_PIC") or "https://telegra.ph/file/276d22aac9f400898cd27.jpg"
+PMPERMIT_PIC = "https://telegra.ph/file/c0f75c1e1456d1032ad2d.jpg"
 
 # Bleep Blop, this is a bot ;)
 PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
@@ -303,12 +302,10 @@ ALIVE_USERNAME = os.environ.get("ALIVE_USERNAME", None)
 S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive Logo
-ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/276d22aac9f400898cd27.jpg"
+ALIVE_LOGO = "https://telegra.ph/file/c0f75c1e1456d1032ad2d.jpg"
 
 # Default .helpme Logo
-INLINE_PIC = os.environ.get(
-    "INLINE_PIC") or "https://telegra.ph/file/276d22aac9f400898cd27.jpg"
+INLINE_PIC = "https://telegra.ph/file/c0f75c1e1456d1032ad2d.jpg"
 
 # Default emoji help
 EMOJI_HELP = os.environ.get("EMOJI_HELP") or "✘"
@@ -712,7 +709,7 @@ with bot:
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 buttons = paginate_help(0, dugmeler, "helpme")
-                text = f"**✨ ҡʏʏ-υѕєявσт ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n✣ **ᴏᴡɴᴇʀ** [{user.first_name}](tg://user?id={user.id})\n✣ **ᴊᴜᴍʟᴀʜ** `{len(dugmeler)}` **Modules**"
+                text = f"**✨ Yumi-υѕєявσт ɪɴʟɪɴᴇ ᴍᴇɴᴜ ✨**\n\n✣ **ᴏᴡɴᴇʀ** [{user.first_name}](tg://user?id={user.id})\n✣ **ᴊᴜᴍʟᴀʜ** `{len(dugmeler)}` **Modules**"
                 await event.edit(
                     text,
                     file=kyylogo,
